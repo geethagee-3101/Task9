@@ -1,30 +1,69 @@
-Task 9: Descriptive Statistics Primer
-Data Analytics Track — Veda Technology
-Objective
-Calculate and interpret mean, median, mode, standard deviation, and percentiles for numeric columns.
-Tools
+# Task 9: Descriptive Statistics Primer
+
+## Data Analytics Track – Veda Technology
+
+### Objective
+Calculate and interpret mean, median, mode, standard deviation, and percentiles to understand the center, spread, and distribution of data.
+
+### Tools Used
 - Python
 - Pandas
 - Microsoft Excel
-Dataset
-task9_titanic_sample.csv is a small, illustrative Titanic-style sample with 20 rows and five numeric columns: Age, Fare, SibSp, Parch, and Pclass. It is not the full Titanic dataset.
-Files
-- Task_9_Descriptive_Statistics.xlsx — sample data, summary statistics, and interpretation guide
-- Task_9_Descriptive_Statistics_Report.docx — task report
-- task9_descriptive_statistics.py — Python/Pandas analysis script
-- task9_titanic_sample.csv — dataset used by the script
-How to Run
-Install dependencies:
-pip install pandas
-Keep the Python script and CSV in the same folder, then run:
-python task9_descriptive_statistics.py
-Key Findings
-- Compare mean and median to identify possible skew.
-- Standard deviation describes spread around the mean and should be interpreted with the mean and units.
-- The 25th and 75th percentiles define the middle 50% of the data; their difference is the interquartile range (IQR).
-- Fare has a mean above its median in this sample, suggesting right-skew.
-- Pclass is an ordinal category, so its numerical statistics should be interpreted cautiously.
-Interview Questions
-When is median better than mean? When the data is skewed or contains outliers, because the median is less affected by extreme values.
 
-What does a large standard deviation tell you? The values are widely spread around the mean.
+### Dataset
+A small Titanic-style sample dataset containing 20 rows and five numeric columns:
+- Age
+- Fare
+- SibSp
+- Parch
+- Pclass
+
+*Note: This is an illustrative sample dataset, not the complete Titanic dataset.*
+
+### Tasks Completed
+- Calculated mean, median, and mode.
+- Calculated standard deviation to understand data spread.
+- Calculated the 25th and 75th percentiles.
+- Calculated the interquartile range (IQR).
+- Compared mean and median to identify possible skewness.
+- Interpreted the results using Excel and Python.
+
+### Key Findings
+- Mean and median help identify possible skewness.
+- A large standard deviation indicates greater variation around the mean.
+- The 25th and 75th percentiles describe the middle 50% of the data.
+- Fare values show signs of right-skewness because the mean is higher than the median.
+- Median is useful when data contains outliers or is strongly skewed.
+
+### Interview Questions
+
+**1. When is median a better measure of center than mean?**
+
+Median is better when the dataset contains outliers or is strongly skewed because extreme values affect the mean more than the median.
+
+**2. What does a large standard deviation tell you?**
+
+A large standard deviation indicates that values are more spread out around the mean.
+
+### Files Included
+- `Task_9_Descriptive_Statistics.xlsx` – Sample data and summary statistics.
+- `Task_9_Descriptive_Statistics_Report.docx` – Task completion report.
+- `task9_descriptive_statistics.py` – Python analysis script.
+- `task9_titanic_sample.csv` – Dataset used for analysis.
+
+### How to Run the Python Script
+
+Install Pandas:
+
+```bash
+pip install pandas
+```
+
+Keep the Python script and CSV file in the same folder and run:
+
+```bash
+python task9_descriptive_statistics.py
+```
+
+### Conclusion
+This task helped develop practical knowledge of descriptive statistics and how they can be used to understand data distribution, central tendency, variability, and skewness.
